@@ -35,7 +35,7 @@ export default function Intro() {
           <h1 className="font-bold text-5xl">Hello World!</h1>
           <br/>
           <p className="text-lg font-semibold text-justify ">
-            <span>I'm </span>
+            <span>I&apos;m </span>
             <span className="font-bold ">Rezky Mandar Suaib </span>
             <span>
               someone who likes doing everything related to technology. Computers are not just electronic devices for me, but loyal friends who are always present at every step of my life journey.
