@@ -8,3 +8,12 @@ html{
 .borderBlack{
     @apply border border-black/10
 }
+
+::selection {
+    background: #ebc138;
+    color: black;
+}
+::-moz-selection {
+    background: #ebc138;
+    color: black;
+}

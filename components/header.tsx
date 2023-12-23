@@ -24,7 +24,7 @@ export default function Header() {
                     animate={{ y: 0, opacity:100}}
                     >
                         <Link className={clsx("flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",{
-                            "text-gray-950 dark:text-gray-100": activeSection === link.name,
+                            "text-gray-950 dark:text-white/60": activeSection === link.name,
                         })}
                         href={link.hash}
                         onClick={()=> {

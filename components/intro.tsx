@@ -14,35 +14,66 @@ export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
 
   return (
-    <section ref={ref} id="home" className="max-w-[78rem] sm:mb-0 scroll-mt-[100rem]">
-      <motion.div
-        className="flex flex-row items-center justify-center mx-40"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        <div className="relative">
-          <Image
-            src={Avatar1}
-            alt="Avatar"
-            width="400"
-            height="400"
-            quality="95"
-            priority={true}
-            className="h-30 w-30 rounded-full object-cover border-[0.50rem] border-white shadow-xl"
-          />
-        </div>
-        <div className="container pl-[3rem] py-[3rem]">
-          <h1 className="font-bold text-5xl">Hello World!</h1>
-          <br/>
-          <p className="text-lg font-semibold text-justify ">
-            <span>I&apos;m </span>
-            <span className="font-bold ">Rezky Mandar Suaib </span>
-            <span>
-              someone who likes doing everything related to technology. Computers are not just electronic devices for me, but loyal friends who are always present at every step of my life journey.
-            </span>
-          </p>
-          <motion.div
-            className="flex flex-col sm:flex-row gap-4 py-[3rem] text-lg font-medium"
+    <section
+    ref={ref}
+    id="home"
+    className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+  >
+    <div className="flex items-center justify-center">
+      <div className="relative">
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "tween",
+            duration: 0.2,
+          }}
+        >
+          <div className="flex items-center justify-center">
+            <div className="relative">
+              <Image
+                src={Avatar1}
+                alt="avatar"
+                quality="95"
+                priority={true}
+                className="w-20 h-20 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              />
+              <motion.span
+                className="absolute bottom-0 right-0 text-4xl"
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 125,
+                  delay: 0.1,
+                  duration: 0.7,
+                }}
+              >
+                👋
+              </motion.span>
+            </div>
+            <h1 className="px-4 text-5xl font-titleFont font-bold cursor-default">Hello World!
+            </h1>
+          </div>
+          
+        </motion.div>
+      </div>
+    </div>
+
+    <motion.h1
+      className="mb-10 mt-[3rem] px-4 text-3xl font-medium !leading-[1.5]"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+    >
+      <span>Hello, I&apos;m </span>
+      <span className="font-bold">Rezky Mandar Suaib.</span> I&apos;m a{" "}
+        <span className="font-bold">fresh graduate</span> with{" "}
+        <span className="font-bold">6 years</span> of experience in design and content creator. Now, I&apos;m venturing into front-end developer with a focus on{" "}
+        <span className="underline">React (Next.js)</span>.
+    </motion.h1>
+
+    <motion.div
+            className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -78,8 +109,6 @@ export default function Intro() {
               <FaGithubSquare />
             </a>
           </motion.div>
-        </div>
-      </motion.div>
-    </section>
+  </section>
   );
 }
