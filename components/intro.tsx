@@ -68,7 +68,7 @@ export default function Intro() {
       <span>Hello, I&apos;m </span>
       <span className="font-bold">Rezky Mandar Suaib.</span> I&apos;m a{" "}
         <span className="font-bold">fresh graduate</span> with{" "}
-        <span className="font-bold">6 years</span> of experience in design and content creator. Now, I&apos;m venturing into front-end developer with a focus on{" "}
+        <span className="font-bold">6 years</span> of experience in design and content creator. Now, I&apos;m venturing into front-end web developer with a focus on{" "}
         <span className="underline">React (Next.js)</span>.
     </motion.h1>
 
@@ -90,7 +90,7 @@ export default function Intro() {
             </Link>
             <a
               className="group bg-white text-[#1f1f1f] px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:before:scale-110 hover:scale-110 hover:bg-white-800 active:scale-105 transition cursor-pointer border border-[#1f1f1f]/10 dark:bg-white/10 dark:text-white/60"
-              href="/CV.pdf"
+              href="/Rezky Mandar Suaib-resumee.pdf"
               download
             >
               Download CV{" "}

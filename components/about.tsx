@@ -21,7 +21,7 @@ export default function About() {
         I am a passionate new graduate Information Technology student. My current interests is
         <span className="font-bold"> Data Analysis </span>
         <span>and </span>
-        <span className="font-bold">Frontend Web Development. </span>
+        <span className="font-bold">Front-End Web Developer. </span>
          Currently I have never had work experience in the field I want, every day I continue to learn to fulfill my portfolio which can indirectly expand my skills. <br/>I just graduated from the Information Technology Department at Telkom University with a GPA of 3.06 in a period of 4 years. <br/> <br/>
         </span>
       </p>
