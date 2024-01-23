@@ -8,7 +8,6 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
-// Element div digunakan sebagai "divider" atau pemisah. Div banyak digunakan untuk mengelompokan sekumpulan element. Sedangkan span digunakan sebagai container untuk inline element. Nah untuk section sendiri tidak memiliki fungsionalitas atau karakteristik khusus. Adapun element lainnya yang mirip seperti yakni tidak memiliki perilaku tertentu seperti article, header, dan footer.
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -66,10 +65,7 @@ export default function Intro() {
       animate={{ opacity: 1, y: 0 }}
     >
       <span>Hello, I&apos;m </span>
-      <span className="font-bold">Rezky Mandar Suaib.</span> I&apos;m a{" "}
-        <span className="font-bold">fresh graduate</span> with{" "}
-        <span className="font-bold">6 years</span> of experience in design and content creator. Now, I&apos;m venturing into front-end web developer with a focus on{" "}
-        <span className="underline">React (Next.js)</span>.
+      <span className="font-bold">Rezky Mandar Suaib</span> a graphic designer with 6 years of experience, specializing in UI/UX design for 3 years, and having 1 year of expertise as a front-end developer.
     </motion.h1>
 
     <motion.div
@@ -90,7 +86,7 @@ export default function Intro() {
             </Link>
             <a
               className="group bg-white text-[#1f1f1f] px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:before:scale-110 hover:scale-110 hover:bg-white-800 active:scale-105 transition cursor-pointer border border-[#1f1f1f]/10 dark:bg-white/10 dark:text-white/60"
-              href="/Rezky Mandar Suaib-resumee.pdf"
+              href="/uiux-resume.pdf"
               download
             >
               Download CV{" "}

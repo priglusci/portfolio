@@ -1,5 +1,7 @@
 import About from "@/components/about";
 import Contact from "@/components/contact";
+import Designer from "@/components/designer";
+import Figmaa from "@/components/figmaa";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
@@ -13,6 +15,8 @@ export default function Home() {
       <About/>
       <Skills/>
       <Projects/>
+      <Figmaa/>
+      <Designer/>
       <Contact/>
     </main>
   )
